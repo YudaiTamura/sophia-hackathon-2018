@@ -8,11 +8,9 @@ $donatedAmount = get_field('myPage__donation-amount');
 ?>
 
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-            <h1 class="main-visual">
-                My Page
-            </h1>
+    <div class="content-area">
+        <main class="site-main my-page">
+            <h1 class="main-visual">My Page</h1>
 
             <div class="my-page__main">
                 <div class="my-page__user">
