@@ -13,20 +13,20 @@ $achievement = get_field('past-donation__achievement');
     <div class="content-area">
         <main class="site-main archive-project">
             <h1 class="main-visual">過去の募金一覧</h1>
-            <ul class="archive-project__article-container">
+            <ul class="project__article-container">
                 <?php
                 if (have_posts()) {
                     while (have_posts()) {
                         the_post();
                         ?>
-                        <li class="archive-project__article-container__article">
-                            <p class="archive-project__article-container__article__title"><?php echo $title ?></p>
-                            <p class="archive-project__article-container__article__donated-amount">合計金額: <?php echo $donated_amount ?>円</p>
-                            <p class="archive-project__article-container__article__donated-people">参加人数:<?php echo $donated_people ?>人</p>
-                            <p class="archive-project__article-container__article__term">募集期間<?php echo $term ?></p>
-                            <div class="archive-project__article-container__article__achievement">
-                                <p class="archive-project__article-container__article__achievement__title">実績</p>
-                                <div class="archive-project__article-container__article__achievement__content">
+                        <li class="project__article-container__article">
+                            <p class="project__article-container__article__title"><?php echo $title ?></p>
+                            <p class="project__article-container__article__donated-amount">合計金額: <?php echo $donated_amount ?>円</p>
+                            <p class="project__article-container__article__donated-people">参加人数: <?php echo $donated_people ?>人</p>
+                            <p class="project__article-container__article__term">募集期間: <?php echo $term ?></p>
+                            <div class="project__article-container__article__achievement">
+                                <p class="project__article-container__article__achievement__title">実績</p>
+                                <div class="project__article-container__article__achievement__content">
                                     <?php echo $achievement ?>
                                 </div>
                             </div>
