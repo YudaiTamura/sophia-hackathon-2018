@@ -7,11 +7,14 @@
 </head>
 
 <?php
-$args = array('post_type' => 'mypage');
-$the_query = new WP_Query($args);
+$the_query = new WP_Query(array(
+    'post_type' => 'mypage',
+    'posts_per_page' => 1
+));
 $singleMyPageID = "";
-if($the_query->have_posts()){
-    $singleMyPageID = get_the_ID();
+if ($the_query->have_posts()) {
+    $the_query->the_post();
+    $singleMyPageID = get_the_permalink();
 }
 ?>
 
@@ -20,13 +23,14 @@ if($the_query->have_posts()){
     <div class="menu">
         <ul class="menu-list">
             <li class="menu-list__item">
-                <a href="<?php get_post_type_archive_link('past-donation'); ?>">過去の募金活動</a>
+                <a href="<?php echo get_post_type_archive_link('past-donation'); ?>">過去の募金活動</a>
             </li>
             <li class="menu-list__item">
-                <a href="<?php echo home_url();?>">現在の募金活動</a>
+                <a href="<?php echo home_url(); ?>">現在の募金活動</a>
             </li>
             <li class="menu-list__item">
-                <a href="<?php get_post_permalink($singleMyPageID) ?>">マイページ</a>
+
+                <a href="<?php echo $singleMyPageID; ?>">マイページ</a>
             </li>
         </ul>
     </div>

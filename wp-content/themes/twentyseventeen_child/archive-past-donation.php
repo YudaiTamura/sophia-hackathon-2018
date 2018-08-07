@@ -39,5 +39,4 @@ $achievement = get_field('past-donation__achievement');
         </main>
     </div>
 
-<? get_footer();
-
+<?php get_footer();
