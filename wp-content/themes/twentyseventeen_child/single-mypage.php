@@ -29,21 +29,44 @@ $donatedAmount = get_field('myPage__donation-amount');
             </div>
 
             <ul class="my-page__project">
+                <h2 class="my-page__project_title">参加プロジェクト</h2>
                 <?php
-                $args = array('post_type' => 'past-donation');
+                $args = array(
+                    'post_type' => 'past-donation',
+                    'posts_per_page' => 2
+                );
                 $the_query = new WP_Query($args);
-                if($the_query->have_posts()){
-                    while($the_query->have_posts()){
+                if ($the_query->have_posts()) {
+                    while ($the_query->have_posts()) {
                         $the_query->the_post();
 
+                        $projectLink = get_the_permalink();
                         $projectImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
                         $projectTitle = get_the_title();
                         $projectDonatedAmount = get_field('past-donation__donated-amount');
-                ?>
+                        ?>
 
-                <li class="my-page__project"></li>
+                        <li class="my-page__project__item">
+                            <a href="<?php echo $projectLink ?>">
+                                <div class="my-page__project__item__image-container">
+                                    <img src="<?php echo $projectImageUrl ?>">
+                                </div>
+                                <div class="my-page__project__item__title-amount">
+                                    <div class="my-page__project__item__title-amount__title-container">
+                                        <p class="my-page__project__item__title-amount__title-container__title">
+                                            <?php echo $projectTitle ?>
+                                        </p>
+                                    </div>
+                                    <div class="my-page__project__item__title-amount__amount-container">
+                                        <p class="my-page__project__item__title-amount__amount-container__amount">
+                                            <?php echo $projectDonatedAmount ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
 
-                <?php
+                        <?php
                     }
                 }
                 ?>
