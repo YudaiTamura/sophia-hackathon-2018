@@ -16,6 +16,8 @@ if ($the_query->have_posts()) {
     $the_query->the_post();
     $singleMyPageID = get_the_permalink();
 }
+
+wp_reset_postdata();
 ?>
 
 <body>
