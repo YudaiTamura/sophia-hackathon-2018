@@ -10,7 +10,7 @@ $achievement = get_field('past-donation__achievement');
 
 ?>
 
-    <div class="content-area">
+    <div class="content-area" id="primary">
         <main class="site-main single-project">
             <h1 class="main-visual">プロジェクト</h1>
             <div class="single-project__article-container">

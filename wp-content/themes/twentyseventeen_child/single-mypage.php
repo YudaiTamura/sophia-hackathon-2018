@@ -8,7 +8,7 @@ $amount = -500;
 ?>
 
 
-    <div class="content-area">
+    <div class="content-area" id="primary">
         <main class="site-main my-page">
             <h1 class="main-visual">My Page</h1>
 

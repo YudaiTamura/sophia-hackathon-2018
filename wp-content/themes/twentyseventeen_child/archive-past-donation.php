@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-    <div class="content-area">
+    <div class="content-area" id="primary">
         <main class="site-main archive-project">
             <h1 class="main-visual">過去のプロジェクト</h1>
             <ul class="project__article-container">
