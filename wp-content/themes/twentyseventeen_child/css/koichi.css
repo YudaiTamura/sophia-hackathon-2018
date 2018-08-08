@@ -51,19 +51,28 @@
 }
 
 .project__article-container__article__image-container {
-  width: 30vw;
+  width: 40vw;
   height: 30vw;
   background: #123456;
   display: inline-block;
 }
 
+.project__article-container__article__title-amount {
+  margin: 50px;
+  width: 70vw; 
+}
 
 .project__article-container__article__title-amount__title {
   margin-bottom: 10px;
-  font-size: 29px;
+  font-size: 32px;
+  /* font-weight: bold; */
+  height: 70%;
 }
 
 .project__article-container__article__title-amount__donated-amount {
   text-align: right;
-  /* font-size: 20px; */
+  height: 30%;
+  font-size: 32px;
+  font-weight: 600;
+  color: #FF3366;
 }
