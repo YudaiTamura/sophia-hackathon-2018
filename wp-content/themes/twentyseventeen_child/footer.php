@@ -1,5 +1,7 @@
 <div id="footertab">
-    Copyright(C) 2018 チーム名
+    <p>
+        Copyright(C) 2018 BOKIN
+    </p>
 </div>
 <?php wp_footer(); ?>
 </body>
