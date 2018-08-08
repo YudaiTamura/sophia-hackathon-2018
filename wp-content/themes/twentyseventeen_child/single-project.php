@@ -3,10 +3,10 @@ get_header();
 
 $imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium')[0];
 $title = get_the_title();
-$donated_amount = get_field('past-donation__donated-amount');
-$donated_people = get_field('past-donation__donated-people');
-$term = get_field('past-donation__term');
-$achievement = get_field('past-donation__achievement');
+$goal = get_field('goal');
+$donated_amount = get_field('donated-amount');
+$donated_people = get_field('numberOfPeople');
+$forWhat = get_field('forWhat');
 
 ?>
 
@@ -22,14 +22,17 @@ $achievement = get_field('past-donation__achievement');
                              style="background-image: url(<?php echo $imageUrl; ?>);"></div>
                     </div>
                     <p class="single-project__article-container__article__title"><?php echo $title ?></p>
+                    <p class="single-project__article-container__article__goal">
+                        目標金額: <?php echo $goal ?> 円</p>
+                    <p class="single-project__article-container__article__donated-people">
                     <p class="single-project__article-container__article__donated-amount">
                         総募金額: <?php echo $donated_amount ?> 円</p>
                     <p class="single-project__article-container__article__donated-people">
                         募金人数: <?php echo $donated_people ?> 人</p>
                     <div class="single-project__article-container__article__achievement">
-                        <p class="single-project__article-container__article__achievement__title">実績: </p>
+                        <p class="single-project__article-container__article__achievement__title">用途: </p>
                         <div class="single-project__article-container__article__achievement__content">
-                            <?php echo $achievement ?>
+                            <?php echo $forWhat ?>
                         </div>
                     </div>
                 </li>
