@@ -7,11 +7,15 @@ Theme Name:twentyseventeen_child
 @import url("./css/yudai.css");
 
 body {
-  background-color: #F5F5F5;
-  font-feature-settings : "palt";
+    background-color: #f0f0f0;
+    font-feature-settings: "palt";
 }
 
 a {
-  text-decoration: none;
-  color: #333333;
+    text-decoration: none;
+    color: #333333;
+}
+
+#primary {
+    min-height: calc(100vh - 401px);
 }
