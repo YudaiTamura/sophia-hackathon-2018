@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+.menu-list__item > a{
+  font-size: 28px;
+}
+
 .content-area {
   width: 100%;
 }
@@ -73,15 +77,15 @@
 
 .project__article-container__article__title-amount__title {
   margin-bottom: 10px;
-  font-size: 32px;
-  /* font-weight: bold; */
+  font-size: 40px;
+  font-weight: bold;
   height: 70%;
 }
 
 .project__article-container__article__title-amount__donated-amount {
   text-align: right;
   height: 30%;
-  font-size: 32px;
+  font-size: 45px;
   font-weight: 600;
   color: #FF3366;
 }
@@ -118,7 +122,7 @@
 
 .my-page__user__info__image-container__image {
   height: 100%;
-  widows: 100%;
+  width: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -161,6 +165,16 @@
   margin-bottom: 50px;
   font-size: 36px;
   font-weight: bold;
+}
+
+.my-page__project__item__title-amount__title-container__title{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.my-page__project__item__title-amount__amount-container__amount{
+  font-weight: bold;
+  font-size: 45px;
 }
 
 
