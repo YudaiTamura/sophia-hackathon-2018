@@ -5,3 +5,8 @@ Theme Name:twentyseventeen_child
 @import url("./css/reset.css");
 @import url("./css/koichi.css");
 @import url("./css/yudai.css");
+
+body {
+  background-color: #F5F5F5;
+  font-feature-settings : "palt";
+}
