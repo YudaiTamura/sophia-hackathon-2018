@@ -6,6 +6,11 @@ get_header();
         <main class="site-main archive-project">
             <h1 class="main-visual">過去のプロジェクト</h1>
             <div class="project__article-container">
+                <div id="donation-buttom-container">
+                    <div id="donation-buttom" data-src="http://localhost:8888/sophia-hackathon-2018/wp-content/uploads/2018/08/image.png"
+                         style="background-image: url(http://localhost:8888/sophia-hackathon-2018/wp-content/uploads/2018/08/image.png);">
+                    </div>
+                </div>
                 <?php
                 if (have_posts()) {
                     while (have_posts()) {

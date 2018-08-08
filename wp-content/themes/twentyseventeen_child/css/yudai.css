@@ -10,8 +10,8 @@ a {
     color: #333333;
 }
 
-#primary{
-    min-height: calc(100vh - 431px);
+#primary {
+    min-height: calc(100vh - 401px);
 }
 
 /**************************************************************/
@@ -24,6 +24,7 @@ a {
 }
 
 #footertab > p {
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
     padding-top: 84px;
     text-align: center;
     font-size: 32px;
@@ -48,6 +49,13 @@ a {
     height: 100%;
     background-size: cover;
     background-position: center;
+}
+
+.top-main {
+    background-color: white;
+    border-radius: 3%;
+    overflow: hidden;
+    padding-bottom: 10px;
 }
 
 .top-main__image-container {
@@ -90,23 +98,44 @@ a {
     background-position: center;
 }
 
-div.top-main__people {
+.top-main__people {
     width: calc(100% - 393px);
     display: flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
 }
 
-p.top-main__people {
+.top-main__people__amount-container {
+    padding-right: 40px;
+    top: 60px;
+    right: 8px;
+    position: relative;
+}
+
+.top-main__people__amount {
     text-align: right;
     font-size: 54px;
     font-weight: bold;
     letter-spacing: 0.05em;
+    color: #FF4E00;
+    width: 100%;
+}
+
+.top-main__people__people-container {
     padding-right: 40px;
-    bottom: 30px;
+    top: 30px;
     right: 8px;
     position: relative;
+}
+
+.top-main__people__people {
+    text-align: right;
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    position: relative;
     color: #FF4E00;
+    width: 100%;
 }
 
 /**************************************************************/
@@ -125,7 +154,7 @@ p.top-main__people {
     background-position: center;
 }
 
-.single-project__article-container__article__title{
+.single-project__article-container__article__title {
     font-size: 64px;
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -141,7 +170,7 @@ p.top-main__people {
     font-weight: bold;
 }
 
-.single-project__article-container__article__donated-people{
+.single-project__article-container__article__donated-people {
     margin-bottom: 20px;
 }
 
