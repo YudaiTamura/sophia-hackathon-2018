@@ -18,7 +18,6 @@
 }
 
 .menu-list__item {
-  
   height: 100%;
   width: 32%;
   font-size: 24px;
@@ -27,22 +26,44 @@
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
 .content-area {
   width: 100%;
 }
 
 .site-main {
-  margin: 50px;
+  margin: 50px 25px 50px 25px;
 }
 
-h1 {
+.main-visual {
+  color: #333;
   font-size: 48px;
   text-align: center;
   margin-bottom: 50px;
 }
 
+.project__article-container__article{
+  background: #FFF;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.project__article-container__article__image-container {
+  width: 30vw;
+  height: 30vw;
+  background: #123456;
+  display: inline-block;
+}
+
+
+.project__article-container__article__title-amount__title {
+  margin-bottom: 10px;
+  font-size: 29px;
+}
+
+.project__article-container__article__title-amount__donated-amount {
+  text-align: right;
+  /* font-size: 20px; */
+}
