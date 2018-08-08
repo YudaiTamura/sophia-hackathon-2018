@@ -10,11 +10,12 @@ a {
     color: #333333;
 }
 
+/**************************************************************/
 #footertab {
     width: 100vw;
     height: 200px;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
     background-color: #444444;
 }
 
@@ -25,7 +26,9 @@ a {
     color: #ffffff;
 }
 
-#donation-buttom-container{
+/**************************************************************/
+
+#donation-buttom-container {
     position: absolute;
     right: 30px;
     bottom: 220px;
@@ -36,39 +39,39 @@ a {
     border-radius: 50%;
 }
 
-#donation-buttom{
+#donation-buttom {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
 }
 
-.top-main__image-container{
+.top-main__image-container {
     width: 100%;
     height: 60vw;
     overflow: hidden;
 }
 
-.top-main__image-container__content{
+.top-main__image-container__content {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
 }
 
-.top-main__title{
+.top-main__title {
     margin: 26px 0 26px 16px;
     font-size: 56px;
     font-weight: 600;
     letter-spacing: 0.05em;
 }
 
-.top-main__container{
+.top-main__container {
     display: flex;
     padding: 20px 0;
 }
 
-.top-main__process-image-container{
+.top-main__process-image-container {
     width: 35vw;
     height: 35vw;
     overflow: hidden;
@@ -76,21 +79,21 @@ a {
     margin-left: 50px;
 }
 
-.top-main__process-image-container__content{
+.top-main__process-image-container__content {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
 }
 
-div.top-main__people{
+div.top-main__people {
     width: calc(100% - 393px);
     display: flex;
     align-items: flex-end;
     flex-direction: row-reverse;
 }
 
-p.top-main__people{
+p.top-main__people {
     text-align: right;
     font-size: 54px;
     font-weight: bold;
@@ -100,4 +103,54 @@ p.top-main__people{
     right: 8px;
     position: relative;
     color: #FF4E00;
+}
+
+/**************************************************************/
+
+.single-project__article-container__article__image-container {
+    width: 100%;
+    height: 60vw;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.single-project__article-container__article__image-container__content {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.single-project__article-container__article__title{
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 2em;
+}
+
+.single-project__article-container__article__goal,
+.single-project__article-container__article__donated-amount,
+.single-project__article-container__article__donated-people {
+    line-height: 100px;
+    letter-spacing: 0.2em;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.single-project__article-container__article__donated-people{
+    margin-bottom: 20px;
+}
+
+.single-project__article-container__article__achievement__title {
+    line-height: 3em;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.single-project__article-container__article__achievement__content {
+    line-height: 4em;
+    letter-spacing: 0.3em;
+    font-size: 13px;
+    font-weight: 200;
 }

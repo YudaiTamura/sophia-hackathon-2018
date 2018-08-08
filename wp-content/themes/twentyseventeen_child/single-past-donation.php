@@ -13,9 +13,9 @@ $achievement = get_field('past-donation__achievement');
     <div class="content-area">
         <main class="site-main single-project">
             <h1 class="main-visual">プロジェクト</h1>
-            <ul class="single-project__article-container">
+            <div class="single-project__article-container">
 
-                <li class="single-project__article-container__article">
+                <div class="single-project__article-container__article">
                     <div class="single-project__article-container__article__image-container">
                         <div class="single-project__article-container__article__image-container__content"
                              data-src="<?php echo $imageUrl; ?>"
@@ -32,9 +32,9 @@ $achievement = get_field('past-donation__achievement');
                             <?php echo $achievement ?>
                         </div>
                     </div>
-                </li>
+                </div>
 
-            </ul>
+            </div>
         </main>
     </div>
 
