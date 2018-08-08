@@ -13,6 +13,7 @@ a {
 #footertab {
     width: 100vw;
     height: 200px;
+    position: absolute;
     bottom: 0;
     background-color: #444444;
 }
@@ -22,4 +23,81 @@ a {
     text-align: center;
     font-size: 32px;
     color: #ffffff;
+}
+
+#donation-buttom-container{
+    position: absolute;
+    right: 30px;
+    bottom: 220px;
+    z-index: 100;
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#donation-buttom{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-main__image-container{
+    width: 100%;
+    height: 60vw;
+    overflow: hidden;
+}
+
+.top-main__image-container__content{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-main__title{
+    margin: 26px 0 26px 16px;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.top-main__container{
+    display: flex;
+    padding: 20px 0;
+}
+
+.top-main__process-image-container{
+    width: 35vw;
+    height: 35vw;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.top-main__process-image-container__content{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+div.top-main__people{
+    width: calc(100% - 393px);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+p.top-main__people{
+    text-align: right;
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding-right: 40px;
+    bottom: 30px;
+    right: 8px;
+    position: relative;
+    color: #FF4E00;
 }

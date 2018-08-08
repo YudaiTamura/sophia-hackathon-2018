@@ -35,15 +35,17 @@ $processImageURL = home_url() . '/wp-content/uploads/2018/08/image-1.png';
                      style="background-image: url(<?php echo $imageUrl; ?>);"></div>
             </div>
             <p class="top-main__title"><?php echo $title; ?></p>
-            <div class="top-main__process-image-container">
-                <div class="top-main__process-image-container__content"
-                     data-src="<?php echo $processImageURL; ?>"
-                     style="background-image: url(<?php echo $processImageURL; ?>);"></div>
-            </div>
-            <div class="top-main__people">
-                <p class="top-main__people">
-                    <?php echo $donated_people; ?>人が参加中
-                </p>
+            <div class="top-main__container">
+                <div class="top-main__process-image-container">
+                    <div class="top-main__process-image-container__content"
+                         data-src="<?php echo $processImageURL; ?>"
+                         style="background-image: url(<?php echo $processImageURL; ?>);"></div>
+                </div>
+                <div class="top-main__people">
+                    <p class="top-main__people">
+                        <?php echo $donated_people; ?>人が参加中
+                    </p>
+                </div>
             </div>
         </div>
 
