@@ -5,7 +5,7 @@ get_header();
     <div class="content-area" id="primary">
         <main class="site-main archive-project">
             <h1 class="main-visual">過去のプロジェクト</h1>
-            <ul class="project__article-container">
+            <div class="project__article-container">
                 <?php
                 if (have_posts()) {
                     while (have_posts()) {
@@ -18,7 +18,7 @@ get_header();
 
                         ?>
                         <a href="<?php echo $singleLink; ?>">
-                            <li class="project__article-container__article">
+                            <div class="project__article-container__article">
                                 <div class="project__article-container__article__image-container">
                                     <div class="project__article-container__article__image-container__content"
                                          data-src="<?php echo $imageUrl; ?>"
@@ -28,13 +28,13 @@ get_header();
                                     <p class="project__article-container__article__title-amount__title"><?php echo $title ?></p>
                                     <p class="project__article-container__article__title-amount__donated-amount">¥<?php echo $donated_amount ?></p>
                                 </div>
-                            </li>
+                            </div>
                         </a>
                         <?php
                     } // end while
                 } // end if
                 ?>
-            </ul>
+            </div>
         </main>
     </div>
 

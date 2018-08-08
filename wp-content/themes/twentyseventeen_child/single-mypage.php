@@ -32,7 +32,7 @@ $amount = -500;
                 </div>
             </div>
 
-            <ul class="my-page__project">
+            <div class="my-page__project">
                 <h2 class="my-page__project_title">参加プロジェクト</h2>
                 <?php
                 $args = array(
@@ -50,7 +50,7 @@ $amount = -500;
                         $amount += 900;
                         ?>
 
-                        <li class="my-page__project__item">
+                        <div class="my-page__project__item">
                             <a href="<?php echo $projectLink ?>">
                                 <div class="my-page__project__item__image-container">
                                     <div class="my-page__project__item__image-container__image"
@@ -71,13 +71,13 @@ $amount = -500;
                                     </div>
                                 </div>
                             </a>
-                        </li>
+                        </div>
 
                         <?php
                     }
                 }
                 ?>
-            </ul>
+            </div>
 
         </main>
     </div>

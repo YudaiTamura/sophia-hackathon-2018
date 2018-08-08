@@ -23,16 +23,16 @@ wp_reset_postdata();
 <body>
 <div class="headtab">
     <div class="menu">
-        <ul class="menu-list">
-            <li class="menu-list__item">
+        <div class="menu-list">
+            <div class="menu-list__item">
                 <a href="<?php echo get_post_type_archive_link('past-donation'); ?>">過去のプロジェクト</a>
-            </li>
-            <li class="menu-list__item">
+            </div>
+            <div class="menu-list__item">
                 <a href="<?php echo home_url(); ?>">現在のプロジェクト</a>
-            </li>
-            <li class="menu-list__item">
+            </div>
+            <div class="menu-list__item">
                 <a href="<?php echo $singleMyPageID; ?>">MY PAGE</a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
