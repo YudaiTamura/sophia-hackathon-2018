@@ -70,9 +70,33 @@ function add_websites_post_type()
         'capability_type' => 'post',
         'has_archive' => true,
         "supports" => array("title", "thumbnail"),
-        'menu_position' => 8,
+        'menu_position' => 9,
     );
     register_post_type('mypage', $myPageParams);
+
+
+    $projectParams = array(
+        'labels' => array(
+            'name' => 'プロジェクト',
+            'singular_name' => 'プロジェクト',
+            'add_new' => 'プロジェクトを追加',
+            'add_new_item' => '新規プロジェクトを追加',
+            'edit_item' => '編集',
+            'new_item' => '新規プロジェクト',
+            'all_items' => '全てのプロジェクト',
+            'view_item' => 'プロジェクトを見る',
+            'search_items' => 'プロジェクトを探す',
+            'not_found' => '見つかりませんでした',
+            'not_found_in_trash' => 'ゴミ箱の中にはありませんでした',
+            'enter_title_here' => 'プロジェクト名を入力',
+        ),
+        'public' => true,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        "supports" => array("title", "thumbnail"),
+        'menu_position' => 10,
+    );
+    register_post_type('project', $projectParams);
 }
 
 
@@ -191,6 +215,84 @@ if (function_exists("register_field_group")) {
             'position' => 'normal',
             'layout' => 'no_box',
             'hide_on_screen' => array(),
+        ),
+        'menu_order' => 0,
+    ));
+    
+    register_field_group(array (
+        'id' => 'acf_%e7%8f%be%e5%9c%a8%e3%81%ae%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88',
+        'title' => '現在のプロジェクト',
+        'fields' => array (
+            array (
+                'key' => 'field_5b6a89f8fb133',
+                'label' => '目標金額',
+                'name' => 'goal',
+                'type' => 'number',
+                'required' => 1,
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
+            array (
+                'key' => 'field_5b6a8a21fb134',
+                'label' => 'これまでに募金された金額',
+                'name' => 'donated-amount',
+                'type' => 'number',
+                'required' => 1,
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
+            array (
+                'key' => 'field_5b6a8a4efb135',
+                'label' => '募金した人数',
+                'name' => 'numberOfPeople',
+                'type' => 'number',
+                'required' => 1,
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
+            array (
+                'key' => 'field_5b6a8a98fb136',
+                'label' => '用途',
+                'name' => 'forWhat',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'project',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
         ),
         'menu_order' => 0,
     ));
