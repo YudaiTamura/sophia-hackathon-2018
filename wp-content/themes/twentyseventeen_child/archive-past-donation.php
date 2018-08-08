@@ -1,13 +1,5 @@
 <?php
 get_header();
-
-$imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
-$title = get_the_title();
-$donated_amount = get_field('past-donation__donated-amount');
-$donated_people = get_field('past-donation__donated-people');
-$term = get_field('past-donation__term');
-$achievement = get_field('past-donation__achievement');
-
 ?>
 
     <div class="content-area">
@@ -18,6 +10,14 @@ $achievement = get_field('past-donation__achievement');
                 if (have_posts()) {
                     while (have_posts()) {
                         the_post();
+
+                        $imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
+                        $title = get_the_title();
+                        $donated_amount = get_field('past-donation__donated-amount');
+                        $donated_people = get_field('past-donation__donated-people');
+                        $term = get_field('past-donation__term');
+                        $achievement = get_field('past-donation__achievement');
+
                         ?>
                         <li class="project__article-container__article">
                             <p class="project__article-container__article__title"><?php echo $title ?></p>
