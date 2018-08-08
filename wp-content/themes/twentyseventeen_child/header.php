@@ -28,7 +28,7 @@ wp_reset_postdata();
                 <a href="<?php echo get_post_type_archive_link('past-donation'); ?>">過去のプロジェクト</a>
             </div>
             <div class="menu-list__item">
-                <a href="<?php echo home_url(); ?>">現在のプロジェクト</a>
+                <a href="<?php echo home_url(); ?>">TOP PAGE</a>
             </div>
             <div class="menu-list__item">
                 <a href="<?php echo $singleMyPageID; ?>">MY PAGE</a>
