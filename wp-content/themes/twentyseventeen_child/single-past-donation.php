@@ -23,11 +23,11 @@ $achievement = get_field('past-donation__achievement');
                     </div>
                     <p class="single-project__article-container__article__title"><?php echo $title ?></p>
                     <p class="single-project__article-container__article__donated-amount">
-                        総募金額: <?php echo $donated_amount ?> 円</p>
+                        総募金額: ¥<?php echo $donated_amount ?></p>
                     <p class="single-project__article-container__article__donated-people">
-                        募金人数: <?php echo $donated_people ?> 人</p>
+                        募金人数: <?php echo $donated_people ?>人</p>
                     <div class="single-project__article-container__article__achievement">
-                        <p class="single-project__article-container__article__achievement__title">実績: </p>
+                        <p class="single-project__article-container__article__achievement__title">実績:</p>
                         <div class="single-project__article-container__article__achievement__content">
                             <?php echo $achievement ?>
                         </div>
