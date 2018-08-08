@@ -1,10 +1,10 @@
 <?php
 get_header();
 
-$imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
+$imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium')[0];
 $userName = get_the_title();
 $donatedAmount = get_field('myPage__donation-amount');
-
+$amount = -500;
 ?>
 
 
@@ -14,17 +14,21 @@ $donatedAmount = get_field('myPage__donation-amount');
 
             <div class="my-page__main">
                 <div class="my-page__user">
-                    <div class="flex-left">
-                        <div class="my-page__user__image-container">
-                            <img src="<?php echo $imageUrl; ?>">
+                    <div class="my-page__user__info">
+                        <div class="my-page__user__info__image-container">
+                            <div class="my-page__user__info__image-container__image"
+                                 data-src="<?php echo $imageUrl; ?>"
+                                 style="background-image: url(<?php echo $imageUrl; ?>);">
+                            </div>
                         </div>
-                        <p class="my-page__user__name">
+                        <p class="my-page__user__info__name">
                             <?php echo $userName; ?>
                         </p>
                     </div>
-                </div>
-                <div>
-                    募金額： ¥ <?php echo $donatedAmount; ?>
+                    <div class="my-page__user__amount">
+                        <p class="my-page__user__amount__title">総募金額：</p>
+                        <p class="my-page__user__amount__amount"><?php echo $donatedAmount; ?> 円</p>
+                    </div>
                 </div>
             </div>
 
@@ -41,15 +45,18 @@ $donatedAmount = get_field('myPage__donation-amount');
                         $the_query->the_post();
 
                         $projectLink = get_the_permalink();
-                        $projectImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
+                        $projectImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium')[0];
                         $projectTitle = get_the_title();
-                        $projectDonatedAmount = get_field('past-donation__donated-amount');
+                        $amount += 900;
                         ?>
 
                         <li class="my-page__project__item">
                             <a href="<?php echo $projectLink ?>">
                                 <div class="my-page__project__item__image-container">
-                                    <img src="<?php echo $projectImageUrl ?>">
+                                    <div class="my-page__project__item__image-container__image"
+                                         data-src="<?php echo $projectImageUrl; ?>"
+                                         style="background-image: url(<?php echo $projectImageUrl; ?>);">
+                                    </div>
                                 </div>
                                 <div class="my-page__project__item__title-amount">
                                     <div class="my-page__project__item__title-amount__title-container">
@@ -59,7 +66,7 @@ $donatedAmount = get_field('myPage__donation-amount');
                                     </div>
                                     <div class="my-page__project__item__title-amount__amount-container">
                                         <p class="my-page__project__item__title-amount__amount-container__amount">
-                                            <?php echo $projectDonatedAmount ?>
+                                            <?php echo $amount ?> 円
                                         </p>
                                     </div>
                                 </div>
