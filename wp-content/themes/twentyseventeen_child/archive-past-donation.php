@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-    <div class="content-area">
+    <div class="content-area" id="primary">
         <main class="site-main archive-project">
             <h1 class="main-visual">過去のプロジェクト</h1>
             <ul class="project__article-container">
@@ -26,8 +26,7 @@ get_header();
                                 </div>
                                 <div class="project__article-container__article__title-amount">
                                     <p class="project__article-container__article__title-amount__title"><?php echo $title ?></p>
-                                    <p class="project__article-container__article__title-amount__donated-amount"><?php echo $donated_amount ?>
-                                        円</p>
+                                    <p class="project__article-container__article__title-amount__donated-amount">¥<?php echo $donated_amount ?></p>
                                 </div>
                             </li>
                         </a>

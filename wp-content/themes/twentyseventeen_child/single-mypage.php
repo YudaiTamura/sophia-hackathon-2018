@@ -8,7 +8,7 @@ $amount = -500;
 ?>
 
 
-    <div class="content-area">
+    <div class="content-area" id="primary">
         <main class="site-main my-page">
             <h1 class="main-visual">My Page</h1>
 
@@ -27,7 +27,7 @@ $amount = -500;
                     </div>
                     <div class="my-page__user__amount">
                         <p class="my-page__user__amount__title">総募金額：</p>
-                        <p class="my-page__user__amount__amount"><?php echo $donatedAmount; ?> 円</p>
+                        <p class="my-page__user__amount__amount">¥<?php echo $donatedAmount; ?></p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ $amount = -500;
                                     </div>
                                     <div class="my-page__project__item__title-amount__amount-container">
                                         <p class="my-page__project__item__title-amount__amount-container__amount">
-                                            <?php echo $amount ?> 円
+                                            ¥<?php echo $amount ?>
                                         </p>
                                     </div>
                                 </div>

@@ -10,12 +10,12 @@ $achievement = get_field('past-donation__achievement');
 
 ?>
 
-    <div class="content-area">
+    <div class="content-area" id="primary">
         <main class="site-main single-project">
             <h1 class="main-visual">プロジェクト</h1>
-            <ul class="single-project__article-container">
+            <div class="single-project__article-container">
 
-                <li class="single-project__article-container__article">
+                <div class="single-project__article-container__article">
                     <div class="single-project__article-container__article__image-container">
                         <div class="single-project__article-container__article__image-container__content"
                              data-src="<?php echo $imageUrl; ?>"
@@ -23,18 +23,18 @@ $achievement = get_field('past-donation__achievement');
                     </div>
                     <p class="single-project__article-container__article__title"><?php echo $title ?></p>
                     <p class="single-project__article-container__article__donated-amount">
-                        総募金額: <?php echo $donated_amount ?> 円</p>
+                        総募金額: ¥<?php echo $donated_amount ?></p>
                     <p class="single-project__article-container__article__donated-people">
-                        募金人数: <?php echo $donated_people ?> 人</p>
+                        募金人数: <?php echo $donated_people ?>人</p>
                     <div class="single-project__article-container__article__achievement">
-                        <p class="single-project__article-container__article__achievement__title">実績: </p>
+                        <p class="single-project__article-container__article__achievement__title">実績:</p>
                         <div class="single-project__article-container__article__achievement__content">
                             <?php echo $achievement ?>
                         </div>
                     </div>
-                </li>
+                </div>
 
-            </ul>
+            </div>
         </main>
     </div>
 
