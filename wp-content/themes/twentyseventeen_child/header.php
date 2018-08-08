@@ -25,14 +25,13 @@ wp_reset_postdata();
     <div class="menu">
         <ul class="menu-list">
             <li class="menu-list__item">
-                <a href="<?php echo get_post_type_archive_link('past-donation'); ?>">過去の募金活動</a>
+                <a href="<?php echo get_post_type_archive_link('past-donation'); ?>">過去のプロジェクト</a>
             </li>
             <li class="menu-list__item">
-                <a href="<?php echo home_url(); ?>">現在の募金活動</a>
+                <a href="<?php echo home_url(); ?>">現在のプロジェクト</a>
             </li>
             <li class="menu-list__item">
-
-                <a href="<?php echo $singleMyPageID; ?>">マイページ</a>
+                <a href="<?php echo $singleMyPageID; ?>">MY PAGE</a>
             </li>
         </ul>
     </div>
