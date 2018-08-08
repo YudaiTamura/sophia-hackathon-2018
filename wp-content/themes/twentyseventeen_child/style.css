@@ -2,5 +2,5 @@
 Template:twentyseventeen
 Theme Name:twentyseventeen_child
 */
-
+@import url("./css/reset.css");
 @import url("./css/shunki.css");
